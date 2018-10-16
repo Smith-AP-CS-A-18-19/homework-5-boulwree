@@ -1,9 +1,16 @@
+//Reece Boulware
 public class Homework5 {
 
 	/* Finish the constructor and create any necessary instance
 	 * variables
 	 */
+	 private String t;
+	 private static int x;
+	 private static int y;
 	public Homework5(String s, int a, int b) {
+		x = a;
+		y = b;
+		t = s;
 
 	}
 
@@ -16,6 +23,9 @@ public class Homework5 {
 	 * substring method in the String class
 	 */
 	public String substring(int index, int length) {
+		String s = t.substring(index, t.length());
+		return s;
+
 
 	}
 
@@ -25,14 +35,23 @@ public class Homework5 {
 	 * an example
 	 */
 	public boolean contains(String s) {
-		
+		if (t.contains(s)){
+			return true;
+		}else{
+			return false;
+		}
+
 	}
 
 	/* Return the larger of the two stored numbers
 	 */
 	public static int max() {
-
-	}
+		if (x > y){
+			return x;
+		}else {
+			return y;
+		}
+		}
 
 	public static void main(String[] args) {
 		int exitCode = 0;

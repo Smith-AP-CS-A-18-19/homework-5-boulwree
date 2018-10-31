@@ -23,6 +23,10 @@ public class Homework5 {
 	 * substring method in the String class
 	 */
 	public String substring(int index, int length) {
+		/* The String.substring method takes in two indices,
+		 * so you need to update your call to it to convert
+		 * the length to another index
+		 */
 		String s = t.substring(index, t.length());
 		return s;
 
